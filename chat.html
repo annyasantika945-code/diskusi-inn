@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Diskusi.in - Grup Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER ASLI -->
+  <div class="header">
+    Diskusi.in - Grup Chat
+
+    <!-- TAMBAHAN: info online & logout -->
+    <div class="header-right">
+      <span id="onlineCount">0 online</span>
+      <button id="logoutBtn">Keluar</button>
+    </div>
+  </div>
+
+  <!-- TAMBAHAN: sistem info (join/leave) -->
+  <div id="systemInfo"></div>
+
+  <!-- CHAT BOX ASLI -->
+  <div id="chatBox"></div>
+
+  <!-- TAMBAHAN: typing indicator -->
+  <div id="typingStatus" class="typing"></div>
+
+  <!-- INPUT AREA ASLI -->
+  <div class="input-area">
+    <input id="message" placeholder="Ketik pesan...">
+    <button onclick="sendMessage()">Kirim</button>
+  </div>
+
+  <!-- JS ASLI -->
+  <script type="module" src="chat.js"></script>
+</body>
+</html>
